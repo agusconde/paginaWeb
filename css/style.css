@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @font-face {
@@ -14,6 +14,7 @@
 /* --------- Header --------- */
 .header {
   border: 4px solid blue;
+  display: flex;
 }
 
 .header__brand_logo {
@@ -29,16 +30,42 @@
   height: 30px;
 }
 
+/* ----- */
+.container{}
+
 /* -------------------------- CLASES REUTILIZABLES (FIN) -------------------------- */
 
+/* --------- Banner principal --------- */
 
+.container__figure__img_banner {
+  width: 100%;
+}
 
 /* -------------------------- INDEX STYLE (INICIO) -------------------------- */
 
+/* --------- Seccion NOVEDADES --------- */
 
+.container__cards{
+  display: flex;
+  flex-wrap: nowrap;
+}
 
+ .container .container__cards .container__cards__element h3{
+  text-align: center;
+} 
+.container__cards__element__img{
+  width: 100%;
+}
+
+/* --------- Seccion DESCUENTOS --------- */
+
+.discounts{
+  display: flex;
+}
 
 /* -------------------------- INDEX STYLE (FIN) -------------------------- */
+
+
 
 li {
   list-style: none;
