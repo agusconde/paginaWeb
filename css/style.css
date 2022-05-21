@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -12,60 +13,226 @@
 /* -------------------------- CLASES REUTILIZABLES (INICIO) -------------------------- */
 
 /* --------- Header --------- */
-.header {
-  border: 4px solid blue;
-  display: flex;
-}
 
 .header__brand_logo {
   height: 75px;
 }
 
-/* --------- Footer --------- */
-.footer {
-  border: 4px solid cornflowerblue;
+.header__log {
+  display: flex;
+  justify-content: space-between;
 }
+
+.header__log_log_in {
+  padding: 1% 1% 0 0;
+}
+
+.header__log_log_in a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.header__nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 0;
+  background-color: rgb(39, 39, 39);
+  height: 100%;
+}
+
+.header__nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --------- Footer --------- */
 
 .footer__social_logo {
   height: 30px;
 }
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__container__social a {
+  text-decoration: none;
+}
 
 /* ----- */
-.container{}
+
+.center_text {
+  text-align: center;
+}
+
+.white_letter {
+  color: white;
+}
 
 /* -------------------------- CLASES REUTILIZABLES (FIN) -------------------------- */
 
-/* --------- Banner principal --------- */
-
-.container__figure__img_banner {
-  width: 100%;
-}
-
 /* -------------------------- INDEX STYLE (INICIO) -------------------------- */
 
-/* --------- Seccion NOVEDADES --------- */
+/* --------- Banner principal --------- */
 
-.container__cards{
-  display: flex;
-  flex-wrap: nowrap;
+.container__figure {
+  background-color: black;
 }
-
- .container .container__cards .container__cards__element h3{
-  text-align: center;
-} 
-.container__cards__element__img{
+.container__figure__img_banner {
   width: 100%;
 }
 
 /* --------- Seccion DESCUENTOS --------- */
 
-.discounts{
+.container__discounts {
+  width: 70%;
   display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+/* --------- Seccion DESTACADOS --------- */
+
+.container__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.container__cards__element {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container__cards__element h3 {
+  margin-top: 10%;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.container__cards__element span {
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.container__cards__element__img {
+  width: 90%;
+}
+
+.container__destacados {
+  padding: 0% 15%;
+}
+
+/* Titulo DESTACADOS */
+.alternative_title {
+  font-family: "Monument Extended";
+}
+
+h2[class="alternative_title"] {
+  font-size: 2em;
+  margin: 2% 0 2% 0;
+}
+
+.container--flexbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container--flexbox--black {
+  background-color: black;
+}
+
+/* --------- Seccion CATEGORIAS --------- */
+
+.container__category {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 1%;
+}
+.container__category h3 {
+  text-align: center;
+}
+.container__category_icon {
+  display: flex;
+  justify-content: space-betweean;
+}
+
+.container__category_icon_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container__category_icon_element_title {
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container__category_icon_element_title h3 {
+  font-family: "Monument Extended";
+  font-size: 2em;
+}
+
+.container__category_icon_element_background {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.container__category_icon_element_background img {
+  width: 80%;
+  opacity: 85%;
+}
+
+/* --------- Seccion NEWSLETTER --------- */
+
+.container__newsletter {
+  width: 100%;
+  margin: 5% 0%;
+}
+
+.section__container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 1% 0%;
+}
+
+.container__newsletter_text {
+  margin: 2% 0;
+}
+.form__email{
+  width: 30%;
+}
+
+.container__newsletter h4 {
+  font-family: "Monument Extended";
+  font-size: 2em;
+}
+
+.container__newsletter span {
+  font-size: 1em;
+}
+.container__newsletter_img {
+  margin: 5% 0%;
+}
+
+.container__newsletter_img img {
+  height: 80%;
 }
 
 /* -------------------------- INDEX STYLE (FIN) -------------------------- */
-
-
 
 li {
   list-style: none;

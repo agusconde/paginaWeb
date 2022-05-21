@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Fin fuentes -->
+    <link rel="stylesheet" href="css/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,600&display=swap"
       rel="stylesheet"
@@ -18,10 +19,20 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html">
-        <img src="assets/icons/brand-logo.png" alt="logo" class="header__brand_logo" />
-      </a>
-      <span>Ingresar</span>
+      <div class="header__log">
+        <div class="header__log_icon">
+          <a href="index.html">
+            <img
+              src="assets/icons/brand-logo.png"
+              alt="logo"
+              class="header__brand_logo"
+            />
+          </a>
+        </div>
+        <div class="header__log_log_in">
+          <a href="">INGRESAR</a>
+        </div>
+      </div>
       <nav class="header__nav">
         <ul>
           <li><a href="index.html">INICIO</a></li>
@@ -45,123 +56,206 @@
         </figure>
       </section>
       <!-- Banner descuentos -->
-      <div class="discounts">
-        <div class="discounts__elem">
-          <h3>Envios gratis</h3>
-          <span>A partir de compras superiores a $20.000</span>
+      <section class="container--flexbox container--flexbox--black">
+        <div class="container__discounts">
+          <div class="container__discounts__elem">
+            <h3 class="center_text white_letter">Envios gratis</h3>
+            <span class="center_text white_letter"
+              >A partir de compras superiores a $20.000</span
+            >
+          </div>
+          <div class="container__discounts__elem">
+            <h3 class="center_text white_letter">3 y 6 cuotas sin interes</h3>
+            <span class="center_text white_letter">
+              Pagando con tajetas de debito y credito bancarias</span
+            >
+          </div>
+          <div class="container__discounts__elem">
+            <h3 class="center_text white_letter">Envios internacionales</h3>
+            <span class="center_text white_letter"
+              >Hace tu pedido desde cualquier parte del mundo</span
+            >
+          </div>
         </div>
-        <div class="discounts__elem">
-          <h3>3 y 6 cuotas sin interes</h3>
-          <span>Pagando con tajetas de debito y credito bancarias</span>
-        </div>
-        <div class="discounts__elem">
-          <h3>Envios internacionales</h3>
-          <span>Hace tu pedido desde cualquier parte del mundo</span>
-        </div>
-      </div>
-      <!-- Seccion 2, NOVEDADES -->
-      <section class="container">
-        <h3>Destacados</h3>
-        <section class="container__cards">
-          <div class="container__cards__element">
-            <h3>Buzo London White</h3>
-            <img
-              src="assets/images/buzo-london-white.jpg"
-              alt="Buzo London White"
-              class="container__cards__element__img"
-            />
-          </div>
-          <div class="container__cards__element">
-            <h3>Buzo london Black</h3>
-            <img
-              src="assets/images/buzo-london-black.jpg"
-              alt="Buzo london Black "
-              class="container__cards__element__img"
-            />
-          </div>
-          <div class="container__cards__element">
-            <h3>Buzo race black</h3>
-            <img
-              src="assets/images/buzo-race-black.jpg"
-              alt="Buzo race black"
-              class="container__cards__element__img"
-            />
-          </div>
-          <div class="container__cards__element">
-            <h3>Buzo haven & hell</h3>
-            <img
-              src="assets/images/buzo-heaven.jpg"
-              alt="Buzo haven & hell"
-              class="container__cards__element__img"
-            />
-          </div>
-        </section>
-        <!-- Seccion 3, CATEGORIAS -->
-        <section class="container">
-          <h3>Categorias</h3>
-          <div class="container__category_icon">Camperas</div>
-          <div class="container__category_icon">Camisas</div>
-          <div class="container__category_icon">Buzos</div>
-          <div class="container__category_icon">Pantalones</div>
-        </section>
       </section>
+
+      <!-- Seccion 2, DESTACADOS -->
+      <section class="container">
+        <div class="container--flexbox">
+          <div class="container__destacados">
+            <h2 class="alternative_title">Destacados</h2>
+            <div class="container__cards">
+              <div class="container__cards__element">
+                <img
+                  src="assets/images/buzo-london-white.jpg"
+                  alt="Buzo London White"
+                  class="container__cards__element__img"
+                />
+                <h3>Buzo London White</h3>
+                <span>$16.990</span>
+              </div>
+              <div class="container__cards__element">
+                <img
+                  src="assets/images/buzo-london-black.jpg"
+                  alt="Buzo london Black "
+                  class="container__cards__element__img"
+                />
+                <h3>Buzo london Black</h3>
+                <span>$16.990</span>
+              </div>
+              <div class="container__cards__element">
+                <img
+                  src="assets/images/buzo-race-black.jpg"
+                  alt="Buzo race black"
+                  class="container__cards__element__img"
+                />
+                <h3>Buzo race black</h3>
+                <span>$14.990</span>
+              </div>
+              <div class="container__cards__element">
+                <img
+                  src="assets/images/buzo-heaven.jpg"
+                  alt="Buzo haven & hell"
+                  class="container__cards__element__img"
+                />
+                <h3>Buzo haven & hell</h3>
+                <span>$14.990</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Seccion 3, CATEGORIAS -->
+
+      <section class="container">
+        <div class="container--flexbox">
+          <div class="container__category">
+            <h2 class="alternative_title">Categorias</h2>
+            <div class="container__category_icon">
+              <div class="container__category_icon_container">
+                <div class="container__category_icon_element_title">
+                  <h3>Camperas</h3>
+                </div>
+                <div class="container__category_icon_element_background">
+                  <img src="assets/images/categorias-campera.jpg" alt="Camisas" />
+                </div>
+              </div>
+              <div class="container__category_icon_container">
+                <div class="container__category_icon_element_title">
+                  <h3>Camisas</h3>
+                </div>
+                <div class="container__category_icon_element_background">
+                  <img src="assets/images/categorias-camisas.jpg" alt="Camisas" />
+                </div>
+              </div>
+              <div class="container__category_icon_container">
+                <div class="container__category_icon_element_title">
+                  <h3>Buzos</h3>
+                </div>
+                <div class="container__category_icon_element_background">
+                  <img src="assets/images/categorias-buzos.jpg" alt="Camisas" />
+                </div>
+              </div>
+              <div class="container__category_icon_container">
+                <div class="container__category_icon_element_title">
+                  <h3>Pantalones</h3>
+                </div>
+                <div class="container__category_icon_element_background">
+                  <img src="assets/images/categorias-pantalones.jpg" alt="Camisas" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Seccion 4, NEWSLETTER -->
       <section class="container">
-        <span>NEWSLETTER</span>
-        <h4>Recibi todas las ofertas</h4>
-        <form class="form" action="envio.php" method="post">
-          <fieldset>
-            <legend>Introduce tu email</legend>
-            <label for="email">E-mail</label>
-            <input
-              class="form__email"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="yourname@example.com"
-              required
-            />
-          </fieldset>
-        </form>
+        <div class="container--flexbox">
+          <div class="section__container">
+            <div class="container__newsletter">
+              <div class="container__newsletter_text">
+                <span>NEWSLETTER</span>
+              </div>
+              <div class="container__newsletter_text">
+                <h4>Recibi todas las ofertas</h4>
+              </div>
+              <div class="container__newsletter_text">
+                <span
+                  >¿Quieres recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a
+                  disfrutarlas!</span
+                >
+              </div>
+              <form class="form" action="envio.php" method="post">
+                <input
+                  class="form__email"
+                  type="email"
+                  name="email"
+                  placeholder="yourname@example.com"
+                  required
+                />
+                <input type="submit" value="Enviar" class="form__input" />
+              </form>
+            </div>
+            <div class="container__newsletter_img">
+              <img src="assets/video/mono-newsletter.gif" alt="" />
+            </div>
+          </div>
+        </div>
       </section>
 
       <footer class="footer">
-        <h4>About Us</h4>
-        <h4>Colecciones</h4>
-        <h4>Tiendas</h4>
-        <!-- MAPA HERE ↓ -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.551475464214!2d-58.42783978423715!3d-34.59021396429189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb587401cae03%3A0x753c4f5b07dfce54!2sKing%20Of%20The%20Kongo!5e0!3m2!1ses-419!2sar!4v1652599076579!5m2!1ses-419!2sar"
-          width="500"
-          height="400"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-        <h4>Encontranos en</h4>
-        <a href="https://www.instagram.com/kingofthekongo/" target="_blank">
-          <img
-            src="assets/icons/instagram-footer-logo.png"
-            alt="instagram icon"
-            class="footer__social_logo"
-          />
-        </a>
-        <a href="https://www.facebook.com/Kingofthekongo" target="_blank">
-          <img
-            src="assets/icons/facebook-footer-logo.png"
-            alt="facebook icon"
-            class="footer__social_logo"
-          />
-        </a>
-        <a href="https://www.whatsapp.com" target="_blank">
-          <img
-            src="assets/icons/whatsapp-footer-logo.png"
-            alt="whatsapp icon"
-            class="footer__social_logo"
-          />
-        </a>
+        <section class="footer__container">
+          <div>
+            <h4>CATEGORIAS</h4>
+            <div class="footer__container__about_us">
+              <div class="footer__container__about_us__element">
+                <h4>About Us</h4>
+              </div>
+              <div class="footer__container__about_us__element">
+                <h4>Colecciones</h4>
+              </div>
+              <div class="footer__container__about_us__element">
+                <h4>Tiendas</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4>Contactános</h4>
+            <div class="footer__container__about_us">
+              <div class="footer__container__about_us__element">
+                <a href="">ventas@kingofthekongo.com.ar</a>
+              </div>
+              <div class="footer__container__about_us__element">
+                <h4>El Salvador 4577, Palermo Soho. Buenos Aires, AR.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="footer__container__social">
+            <h4>Encontranos en</h4>
+            <a href="https://www.instagram.com/kingofthekongo/" target="_blank">
+              <img
+                src="assets/icons/instagram-footer-logo.png"
+                alt="instagram icon"
+                class="footer__social_logo"
+              />
+            </a>
+            <a href="https://www.facebook.com/Kingofthekongo" target="_blank">
+              <img
+                src="assets/icons/facebook-footer-logo.png"
+                alt="facebook icon"
+                class="footer__social_logo"
+              />
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+              <img
+                src="assets/icons/whatsapp-footer-logo.png"
+                alt="whatsapp icon"
+                class="footer__social_logo"
+              />
+            </a>
+          </div>
+        </section>
       </footer>
     </main>
   </body>
