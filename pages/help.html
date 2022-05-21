@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <a href="../index.html">
-        <img src="../assets/icons/brand-logo.png" alt="Kongo" id="brand-logo-header" />
+        <img src="../assets/icons/brand-logo.png" alt="Kongo" class="header__brand_logo" />
       </a>
       <span>Ingresar</span>
       <nav>
@@ -26,44 +26,52 @@
       </nav>
     </header>
 
-    <h2>AYUDA</h2>
+    <section class="container">
+      <h2>AYUDA</h2>
 
-    <h3>¿Necesitas ayuda para realizar tu compra?</h3>
-    <p>
-      Dejanos un mensaje con el incoveniente que estas teniendo y te responderemos a la
-      brevedad
-    </p>
-    <div>
-      <form action="">
-        <label for="nombreFormHelp">Nombre</label>
-        <input type="text" name="" id="nombreFormHelp" placeholder="Nombre" />
-        <label for="emailFormHelp">E-mail</label>
-        <input
-          type="email"
-          Sname=""
-          id="emailFormHelp"
-          placeholder="yourname@example.com"
-          required
-        />
-        <label for="genero">Genero</label>
-        <select name="genero" id="genero">
-          <option value="">Hombre</option>
-          <option value="">Mujer</option>
-        </select>
-        <textarea
-          name=""
-          id=""
-          cols="150"
-          rows="10"
-          placeholder="Escriba aqui su consulta"
-        >
-        </textarea>
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Limpiar formulario" />
-      </form>
-    </div>
+      <h3>¿Necesitas ayuda para realizar tu compra?</h3>
+      <p>
+        Dejanos un mensaje con el incoveniente que estas teniendo y te responderemos a la
+        brevedad
+      </p>
+      <div>
+        <form class="container__form" action="">
+          <label for="nombreFormHelp">Nombre</label>
+          <input
+            type="text"
+            name=""
+            class="container__form_text"
+            id="nombreFormHelp"
+            placeholder="Nombre"
+          />
+          <label for="emailFormHelp">E-mail</label>
+          <input
+            type="email"
+            Sname=""
+            class="container__form_email"
+            id="emailFormHelp"
+            placeholder="yourname@example.com"
+            required
+          />
+          <label for="genero">Genero</label>
+          <select name="genero" id="genero">
+            <option value="">Hombre</option>
+            <option value="">Mujer</option>
+          </select>
+          <textarea
+            name=""
+            id=""
+            cols="150"
+            rows="10"
+            placeholder="Escriba aqui su consulta"
+          >
+          </textarea>
+          <input type="submit" value="Enviar" class="container__form_submit" />
+        </form>
+      </div>
+    </section>
 
-    <footer class="footer-cointainer">
+    <footer class="footer">
       <h4>About Us</h4>
       <h4>Colecciones</h4>
       <h4>Tiendas</h4>
@@ -83,21 +91,21 @@
         <img
           src="../assets/icons/instagram-footer-logo.png"
           alt="instagram icon"
-          class="footer-social-logo"
+          class="footer__social_logo"
         />
       </a>
       <a href="https://www.facebook.com/Kingofthekongo" target="_blank">
         <img
           src="../assets/icons/facebook-footer-logo.png"
           alt="facebook icon"
-          class="footer-social-logo"
+          class="footer__social_logo"
         />
       </a>
       <a href="https://www.whatsapp.com" target="_blank">
         <img
           src="../assets/icons/whatsapp-footer-logo.png"
           alt="whatsapp icon"
-          class="footer-social-logo"
+          class="footer__social_logo"
         />
       </a>
     </footer>
