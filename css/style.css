@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* -------------------------- INICIO CLASES REUTILIZABLES -------------------------- */
+
+/* --------- Header --------- */
+.header {
+  border: 4px solid blue;
+}
+
+#brand-logo-header {
+  height: 75px;
+}
+
+/* --------- Footer --------- */
+.footer-cointainer {
+  border: 4px solid cornflowerblue;
+}
+
+.footer-social-logo {
+  height: 30px;
+}
+
+/* -------------------------- FIN CLASES REUTILIZABLES -------------------------- */
+
+li {
+  list-style: none;
+}
+
+/* Titulo secciones */
+h2 {
+  text-align: center;
+}
+
+/* Formulario de ayuda */
+textarea {
+  resize: none;
+}
