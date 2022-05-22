@@ -205,7 +205,8 @@ h2[class="alternative_title"] {
   position: relative;
 }
 
-.container__category_icon_element_title {
+.container__category_icon_element_title 
+{ color: white;
   z-index: 20;
   position: absolute;
   top: 50%;
@@ -227,7 +228,7 @@ h2[class="alternative_title"] {
 
 .container__category_icon_element_background img {
   width: 80%;
-  opacity: 85%;
+  filter: brightness(85%);
 }
 
 /* --------- Seccion NEWSLETTER --------- */
