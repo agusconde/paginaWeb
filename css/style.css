@@ -43,7 +43,7 @@
 .header__nav {
   display: flex;
   justify-content: center;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(23, 23, 23);
 }
 
 .header__nav ul {
@@ -62,12 +62,21 @@
 
 /* --------- Footer --------- */
 
+.footer--margin {
+  margin: 2% 2%;
+}
+
 .footer__social_logo {
   height: 30px;
 }
 .footer__container {
   display: flex;
   justify-content: space-around;
+}
+
+.footer__container__social__logo {
+  display: flex;
+  justify-content: center;
 }
 
 .footer__container__social a {
@@ -84,6 +93,10 @@
   color: white;
 }
 
+.container--black_background {
+  background-color: rgb(23, 23, 23);
+}
+
 /* -------------------------- CLASES REUTILIZABLES (FIN) -------------------------- */
 
 /* -------------------------- INDEX STYLE (INICIO) -------------------------- */
@@ -91,7 +104,7 @@
 /* --------- Banner principal --------- */
 
 .container__figure {
-  background-color: black;
+  background-color: rgb(23, 23, 23);
 }
 .container__figure__img_banner {
   width: 100%;
@@ -158,7 +171,7 @@ h2[class="alternative_title"] {
 }
 
 .container--flexbox--black {
-  background-color: black;
+  background-color: rgb(23, 23, 23);
 }
 
 /* --------- Seccion CATEGORIAS --------- */
@@ -210,6 +223,10 @@ h2[class="alternative_title"] {
 
 /* --------- Seccion NEWSLETTER --------- */
 
+.container--margin {
+  margin: 5% 0%;
+}
+
 .container__newsletter {
   width: 100%;
   margin: 5% 0%;
@@ -224,9 +241,6 @@ h2[class="alternative_title"] {
 
 .container__newsletter_text {
   margin: 2% 0;
-}
-.form__email {
-  width: 30%;
 }
 
 .container__newsletter h4 {
@@ -243,6 +257,20 @@ h2[class="alternative_title"] {
 
 .container__newsletter_img img {
   height: 80%;
+}
+
+.form__email {
+  width: 30%;
+  padding: 0.5%;
+  text-align: left;
+}
+
+.form__input {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  padding: 0.5%;
+
 }
 
 /* -------------------------- INDEX STYLE (FIN) -------------------------- */
