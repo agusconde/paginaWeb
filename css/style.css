@@ -371,7 +371,7 @@ textarea {
   padding: 1% 2%;
 }
 
-.container__form__element{
+.container__form__element {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -388,3 +388,55 @@ textarea {
 }
 
 /* -------------------------- HELP STYLE (FIN) -------------------------- */
+
+.container__store {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container__store__card {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: #171717; */
+  margin: 2%;
+  border: 10px solid #171717;
+  border-radius: 22px 22px 22px 22px;
+}
+
+.container__store__card__element {
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+  width: 100%;
+}
+
+.container__store__card__info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.card__text {
+  font-size: 1.5em;
+}
+
+.container__store__card__map {
+  width: 70%;
+  height: 100%;
+  border-radius: 25px 25px 25px 25px;
+  overflow: hidden;
+  border: 8px solid #171717;
+}
+
+.container__store__card__map iframe {
+  width: 600px;
+  height: 400px;
+}
