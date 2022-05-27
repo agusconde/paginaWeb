@@ -389,9 +389,11 @@ textarea {
 
 /* -------------------------- HELP STYLE (FIN) -------------------------- */
 
+/* -------------------------- STORE STYLE (INICIO) -------------------------- */
 .container__store {
   display: flex;
   flex-wrap: wrap;
+  padding: 0% 3%;
 }
 
 .container__store__card {
@@ -440,3 +442,15 @@ textarea {
   width: 600px;
   height: 400px;
 }
+
+.container__form_text {
+  border: 0;
+  border-bottom: 3px solid #171717;
+}
+
+.container__form_email {
+  border: 0;
+  border-bottom: 3px solid #171717;
+}
+
+/* -------------------------- STORE FIN (INICIO) -------------------------- */
