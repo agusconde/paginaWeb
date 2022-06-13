@@ -360,23 +360,22 @@ textarea {
 
 /* -------------------------- ACCESORIES STYLE (INICIO) -------------------------- */
 
-.main_context_container {
-  display: flex;
-}
 
-.container-side-bar form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form__item {
+.main__container{
   display: flex;
   justify-content: space-between;
-  margin: 2% 0;
 }
 
-.form__item label {
-  font-size: 1em;
+.gallery__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.item__img {
+  width: 300px;
 }
 
 /* -------------------------- ACCESORIES STYLE (FIN) -------------------------- */
@@ -560,7 +559,7 @@ textarea {
 /*movil*/
 
 @media (max-width: 575.98px) and (orientation: portrait) {
-/*   body {
+  /*   body {
     background: green;
   } */
 
@@ -611,7 +610,7 @@ textarea {
     display: flex;
   }
 
-  .container__discounts__elem{
+  .container__discounts__elem {
     width: 110px;
   }
 
