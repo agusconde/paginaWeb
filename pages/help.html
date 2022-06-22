@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../assets/icons/favicon.jpg" type="image/x-icon" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- Inicio Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Fin fuentes -->
-    <link rel="stylesheet" href="..css/normalize.css" />
+<!--     <link rel="stylesheet" href="..css/normalize.css" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,600&display=swap"
       rel="stylesheet"
@@ -19,32 +30,47 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header header--sticky">
-      <div class="header__log">
-        <div class="header__log_icon">
-          <a href="../index.html">
-            <img
-              src="../assets/icons/brand-logo.png"
-              alt="logo"
-              class="header__brand_logo"
-            />
-          </a>
-        </div>
-        <div class="header__log_log_in">
-          <a href="">INGRESAR</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../assets/icons/brand-logo.png" width="100px" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newClothes.html">NEW</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prendas.html">PRENDAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accesories.html">ACCESORIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stores.html">STORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help.html">AYUDA</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <nav class="header__nav">
-        <ul>
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="newClothes.html">NEW</a></li>
-          <li><a href="prendas.html">PRENDAS</a></li>
-          <li><a href="accesories.html">ACCESORIOS</a></li>
-          <li><a href="stores.html">STORES</a></li>
-          <li><a href="help.html">AYUDA</a></li>
-        </ul>
-      </nav>
-    </header>
+    </nav>
+    <!-- fin navbar -->
 
     <h2 class="alternative_title">AYUDA</h2>
     <main class="container center">
@@ -95,52 +121,132 @@
       </section>
     </main>
 
-    <footer class="footer footer--margin">
-      <section class="footer__container">
-        <div>
-          <h4>CATEGORIAS</h4>
-          <div class="footer__container__about_us">
-            <div class="footer__container__about_us__element">
-              <h4>About Us</h4>
+<footer class="mt-5">
+        <div class="container-fluid px-md-5">
+          <div class="row element-footer">
+            <div class="col mb-2 text-center ">
+              <h4 class="text-center">Categorías</h4>
+              <ul class="footer-menu p-0">
+                <li class="footer-menu-item">
+                  <a class="footer-menu-link text-decoration-none text-reset" href="../index.html">INICIO</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a class="footer-menu-link text-decoration-none text-reset" href="newClothes.html"
+                    >NEW</a
+                  >
+                </li>
+                <li class="footer-menu-item ">
+                  <a
+                    class="footer-menu-link text-decoration-none text-reset"
+                    href="prendas.html"
+                    >PRENDAS</a
+                  >
+                </li>
+                <li class="footer-menu-item">
+                  <a
+                    class="footer-menu-link text-decoration-none text-reset"
+                    href="accesories.html"
+                    >ACCESORIOS</a
+                  >
+                </li>
+                <li class="footer-menu-item">
+                  <a
+                    class="footer-menu-link text-decoration-none text-reset"
+                    href="stores.html"
+                    target="_blank"
+                    >STORES</a
+                  >
+                </li>
+                <li class="footer-menu-item">
+                  <a
+                    class="footer-menu-link text-decoration-none text-reset"
+                    href="help.html"
+                    target="_blank"
+                    >AYUDA</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="footer__container__about_us__element">
-              <h4>Colecciones</h4>
+
+            <div class="contactanos col-md mb-2 text-center">
+              <h4>Contactános</h4>
+              <ul class="contact-info">
+                <li class="contact-item">
+                  <svg
+                    class="icon-inline icon-lg icon-w contact-item-icon"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.26666 3.75001C1.26666 3.52909 1.44575 3.35001 1.66666 3.35001H18.3333C18.5542 3.35001 18.7333 3.52909 18.7333 3.75001V16.25C18.7333 16.4709 18.5542 16.65 18.3333 16.65H1.66666C1.44575 16.65 1.26666 16.4709 1.26666 16.25V3.75001ZM2.06666 4.15001V15.85H17.9333V4.15001H2.06666Z"
+                      fill="black"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.34666 3.51C1.4792 3.33327 1.72992 3.29745 1.90666 3.43L9.99999 9.5L18.0933 3.43C18.2701 3.29745 18.5208 3.33327 18.6533 3.51C18.7859 3.68673 18.7501 3.93745 18.5733 4.07L10.24 10.32C10.0978 10.4267 9.90221 10.4267 9.75999 10.32L1.42666 4.07C1.24992 3.93745 1.21411 3.68673 1.34666 3.51Z"
+                      fill="black"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.66666 3.35001C1.88758 3.35001 2.06666 3.52909 2.06666 3.75001V10C2.06666 10.2209 1.88758 10.4 1.66666 10.4C1.44575 10.4 1.26666 10.2209 1.26666 10V3.75001C1.26666 3.52909 1.44575 3.35001 1.66666 3.35001ZM18.3333 3.35001C18.5542 3.35001 18.7333 3.52909 18.7333 3.75001V10C18.7333 10.2209 18.5542 10.4 18.3333 10.4C18.1124 10.4 17.9333 10.2209 17.9333 10V3.75001C17.9333 3.52909 18.1124 3.35001 18.3333 3.35001Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                  <a href="mailto:ventas@kingofthekongo.com.ar" class="contact-link text-decoration-none text-reset"
+                    >ventas@kingofthekongo.com.ar</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <svg
+                    class="icon-inline icon-lg icon-w contact-item-icon"
+                    width="14"
+                    height="18"
+                    viewBox="0 0 14 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.349976 6.91666C0.349976 3.24408 3.32739 0.266663 6.99998 0.266663C10.6726 0.266663 13.65 3.24408 13.65 6.91666C13.65 9.76675 12.0136 12.462 10.4357 14.4082C9.64056 15.3888 8.84641 16.1961 8.25119 16.7582C7.95333 17.0396 7.70463 17.2601 7.52968 17.4109C7.44218 17.4863 7.37308 17.5443 7.32543 17.5838C7.30161 17.6036 7.28314 17.6187 7.27042 17.629L7.25569 17.641L7.25164 17.6442L7.25046 17.6452L7.25009 17.6455C7.24996 17.6456 7.24985 17.6457 6.99998 17.3333C6.7501 17.6457 6.74999 17.6456 6.74986 17.6455L6.74949 17.6452L6.74831 17.6442L6.74426 17.641L6.72953 17.629C6.71681 17.6187 6.69835 17.6036 6.67452 17.5838C6.62687 17.5443 6.55777 17.4863 6.47027 17.4109C6.29532 17.2601 6.04662 17.0396 5.74876 16.7582C5.15354 16.1961 4.35939 15.3888 3.56427 14.4082C1.98633 12.462 0.349976 9.76675 0.349976 6.91666ZM6.99998 17.3333L6.7501 17.6457C6.89618 17.7625 7.10377 17.7625 7.24985 17.6457L6.99998 17.3333ZM6.99997 16.8113C7.00242 16.8092 7.0049 16.8071 7.00738 16.8049C7.17422 16.6611 7.41381 16.4487 7.70189 16.1766C8.27854 15.632 9.04689 14.8508 9.81427 13.9043C11.3613 11.9963 12.85 9.48324 12.85 6.91666C12.85 3.68591 10.2307 1.06666 6.99998 1.06666C3.76922 1.06666 1.14998 3.68591 1.14998 6.91666C1.14998 9.48324 2.63863 11.9963 4.18568 13.9043C4.95306 14.8508 5.72141 15.632 6.29806 16.1766C6.58614 16.4487 6.82573 16.6611 6.99257 16.8049C6.99505 16.8071 6.99752 16.8092 6.99997 16.8113Z"
+                      fill="black"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M4.94937 4.86605C5.49322 4.3222 6.23085 4.01666 6.99998 4.01666C7.38081 4.01666 7.75791 4.09167 8.10976 4.23741C8.4616 4.38315 8.7813 4.59676 9.05059 4.86605C9.31988 5.13534 9.53349 5.45504 9.67923 5.80688C9.82497 6.15872 9.89998 6.53583 9.89998 6.91666C9.89998 7.2975 9.82497 7.6746 9.67923 8.02644C9.53349 8.37829 9.31988 8.69798 9.05059 8.96727C8.7813 9.23656 8.4616 9.45017 8.10976 9.59591C7.75791 9.74165 7.38081 9.81666 6.99998 9.81666C6.23085 9.81666 5.49322 9.51113 4.94937 8.96727C4.40551 8.42342 4.09998 7.68579 4.09998 6.91666C4.09998 6.14753 4.40551 5.40991 4.94937 4.86605ZM6.99998 4.81666C6.44302 4.81666 5.90888 5.03791 5.51505 5.43174C5.12122 5.82556 4.89998 6.35971 4.89998 6.91666C4.89998 7.47362 5.12122 8.00776 5.51505 8.40159C5.90888 8.79541 6.44302 9.01666 6.99998 9.01666C7.27575 9.01666 7.54883 8.96234 7.80361 8.85681C8.05839 8.75128 8.2899 8.59659 8.4849 8.40159C8.6799 8.20658 8.83459 7.97508 8.94012 7.7203C9.04566 7.46551 9.09998 7.19244 9.09998 6.91666C9.09998 6.64089 9.04566 6.36781 8.94012 6.11303C8.83459 5.85824 8.6799 5.62674 8.4849 5.43174C8.2899 5.23674 8.05839 5.08205 7.80361 4.97652C7.54883 4.87098 7.27575 4.81666 6.99998 4.81666Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                  El Salvador 4577, Palermo Soho. Buenos Aires, AR.
+                </li>
+              </ul>
             </div>
-            <div class="footer__container__about_us__element">
-              <h4>Tiendas</h4>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h4>Contactános</h4>
-          <div class="footer__container__about_us">
-            <div class="footer__container__about_us__element">
-              <a href="">ventas@kingofthekongo.com.ar</a>
-            </div>
-            <div class="footer__container__about_us__element">
-              <h4>El Salvador 4577, Palermo Soho. Buenos Aires, AR.</h4>
-            </div>
-          </div>
-        </div>
-        <div class="footer__container__social">
-          <h4>Encontranos en</h4>
-          <div class="footer__container__social__logo">
-            <div>
-              <a href="https://www.instagram.com/kingofthekongo/" target="_blank">
+
+            <div class=" col-md mb-2 text-center">
+              <h4>Encontrános en</h4>
+                            <a href="https://www.instagram.com/kingofthekongo/" target="_blank" class="text-decoration-none text-reset">
                 <img
                   src="../assets/icons/instagram-footer-logo.png"
                   alt="instagram icon"
                   class="footer__social_logo"
                 />
               </a>
-              <a href="https://www.facebook.com/Kingofthekongo" target="_blank">
+              <a href="https://www.facebook.com/Kingofthekongo" target="_blank" class="text-decoration-none text-reset">
                 <img
                   src="../assets/icons/facebook-footer-logo.png"
                   alt="facebook icon"
                   class="footer__social_logo"
                 />
               </a>
-              <a href="https://www.whatsapp.com" target="_blank">
+              <a href="https://www.whatsapp.com" target="_blank" class="text-decoration-none text-reset">
                 <img
                   src="../assets/icons/whatsapp-footer-logo.png"
                   alt="whatsapp icon"
@@ -149,8 +255,14 @@
               </a>
             </div>
           </div>
-        </div>
-      </section>
-    </footer>
+
+         
+
+      </footer>
+
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
   </body>
 </html>
