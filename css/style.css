@@ -373,7 +373,7 @@ textarea {
   resize: none;
 }
 
-/* -------------------------- ACCESORIES STYLE (INICIO) -------------------------- */
+/* -------------------------- NEW STYLE (INICIO) -------------------------- */
 
 .main__container {
   display: flex;
@@ -438,6 +438,10 @@ textarea {
 
 .form__item label {
   font-size: 1em;
+}
+
+.form__checkbox{
+  margin-left: 10px;
 }
 
 /* -------------------------- ACCESORIES STYLE (FIN) -------------------------- */
