@@ -1,0 +1,941 @@
+@use "vars";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url(../assets/fonts/MonumentExtended-Regular.otf);
+}
+
+/* -------------------------- CLASES REUTILIZABLES (INICIO) -------------------------- */
+
+.footer--margin {
+  margin: 2% 2%;
+}
+
+.footer__social_logo {
+  height: 30px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__container {
+  h4 {
+    font-weight: bold;
+  }
+}
+
+.footer__container__social__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__container__social {
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer__container__about_us__element {
+  h4 {
+    font-weight: lighter;
+  }
+}
+
+.footer__container__about_us__element {
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+}
+
+/* ----- */
+
+.center_text {
+  text-align: center;
+}
+
+.white_letter {
+  color: white;
+}
+
+.container--black_background {
+  background-color: vars.$color1;
+}
+
+/* -------------------------- CLASES REUTILIZABLES (FIN) -------------------------- */
+
+/* -------------------------- INDEX STYLE (INICIO) -------------------------- */
+
+/* --------- Banner principal --------- */
+
+.container__figure {
+  background-color: vars.$color1;
+}
+
+.container__figure__img_banner {
+  width: 100%;
+}
+
+/* --------- Seccion DESCUENTOS --------- */
+
+.container__discounts {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.container__discounts {
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+.container__discounts__elem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.container__discounts__elem {
+  div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* --------- Seccion DESTACADOS --------- */
+
+.container__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.container__cards--wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container__cards__element {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container__cards__element {
+  img {
+    margin: 0 auto;
+  }
+}
+
+.container__cards__element--grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.container__cards__element__title {
+  margin-top: 10%;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container__cards__element__title--grid {
+  margin-top: 2%;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container__cards__element__price {
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.container__cards__element__price--grid {
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.container__cards__element__img {
+  width: 90%;
+  transition-property: width;
+  transition-duration: 1s;
+}
+
+.container__cards__element__img--grid {
+  width: 50%;
+}
+
+.container__destacados {
+  padding: 0% 15%;
+}
+
+/* Titulo DESTACADOS */
+.alternative_title {
+  font-family: "Monument Extended";
+}
+
+h2[class="alternative_title"] {
+  font-size: 2em;
+  margin-top: 2%;
+}
+
+.container--flexbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container--flexbox--black {
+  background-color: vars.$color1;
+}
+
+/* --------- Seccion CATEGORIAS --------- */
+
+.container__category {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 1%;
+}
+
+.container__category {
+  h3 {
+    text-align: center;
+  }
+}
+
+.container__category_icon {
+  display: flex;
+  justify-content: space-betweean;
+}
+
+.container__category_icon_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: auto;
+}
+
+.container__category_icon_element_title {
+  color: white;
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container__category_icon_element_title {
+  h3 {
+    font-family: "Monument Extended";
+    font-size: 1.5em;
+  }
+}
+
+.container__category_icon_element_background {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.container__category_icon_element_background {
+  img {
+    width: 80%;
+
+    filter: brightness(85%);
+  }
+}
+
+/* --------- Seccion NEWSLETTER --------- */
+
+.container--margin {
+  margin: 5% 0%;
+}
+
+.container__newsletter {
+  width: 100%;
+  margin: 5% 0%;
+}
+
+.section__container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 1% 0%;
+}
+
+.container__newsletter_text {
+  margin: 2% 0;
+}
+
+.container__newsletter {
+  h4 {
+    font-family: "Monument Extended";
+    font-size: 2em;
+  }
+}
+
+.container__newsletter {
+  span {
+    font-size: 1em;
+  }
+}
+
+.container__newsletter_img {
+  margin: 5% 0%;
+}
+
+.container__newsletter_img {
+  img {
+    height: 80%;
+  }
+}
+
+.form__email {
+  width: 30%;
+  padding: 0.5%;
+  text-align: left;
+}
+
+.form__input {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  padding: 0.5%;
+}
+
+/* -------------------------- INDEX STYLE (FIN) -------------------------- */
+
+li {
+  list-style: none;
+}
+
+/* Titulo secciones */
+h2 {
+  text-align: center;
+}
+
+/* Formulario de ayuda */
+textarea {
+  resize: none;
+}
+
+/* -------------------------- NEW STYLE (INICIO) -------------------------- */
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__container {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery__item {
+  div {
+    text-align: center;
+  }
+}
+
+.description__container {
+  margin: 25px;
+}
+
+.description__container {
+  h3 {
+    margin: 25px 0;
+  }
+}
+
+.gallery__item__name {
+  text-align: center;
+}
+
+.item__img {
+  width: 100%;
+}
+
+.main_context_container {
+  display: flex;
+}
+
+.container-side-bar {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.container-side-bar {
+  h3 {
+    font-size: 1.3em;
+  }
+}
+
+.asside {
+  padding: 15px 25px;
+}
+
+.form__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+
+.form__item {
+  label {
+    font-size: 1em;
+  }
+}
+
+.form__checkbox {
+  margin-left: 10px;
+}
+
+.gallery__item__price {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* -------------------------- ACCESORIES STYLE (FIN) -------------------------- */
+
+/* -------------------------- HELP STYLE (INICIO) -------------------------- */
+
+.main_help_menu {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 15px 18px 9px 0px rgba(201, 199, 201, 1);
+  border-radius: 11px 11px 11px 11px;
+  border: 5px solid #4a4a4a;
+  padding: 1% 2%;
+}
+
+.container__form__element {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0.5% 0%;
+}
+
+.text_area__help_page {
+  width: 100%;
+  height: 5em;
+}
+
+.main_help_menu {
+  div {
+    margin: 0.5% 0;
+  }
+}
+
+/* -------------------------- HELP STYLE (FIN) -------------------------- */
+
+/* -------------------------- STORE STYLE (INICIO) -------------------------- */
+.container__store {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0% 3%;
+}
+
+.container__store__card {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2%;
+  border: 10px solid #171717;
+  border-radius: 22px 22px 22px 22px;
+}
+
+.container__store__card__element {
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+  width: 100%;
+}
+
+.container__store__card__info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.card__text {
+  font-size: 1.5em;
+}
+
+.container__store__card__map {
+  width: 70%;
+  height: 100%;
+  border-radius: 25px 25px 25px 25px;
+  overflow: hidden;
+  border: 8px solid #171717;
+}
+
+.container__store__card__map {
+  iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+.container__form_text {
+  border: 0;
+  border-bottom: 3px solid #171717;
+}
+
+.container__form_email {
+  border: 0;
+  border-bottom: 3px solid #171717;
+}
+
+/* -------------------------- STORE FIN (INICIO) -------------------------- */
+
+/* Media queries */
+
+/*Tablet*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait) {
+  .container__discounts {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .container__discounts {
+    height: 50px;
+  }
+
+  .container__discounts {
+    h3 {
+      font-size: 1em;
+    }
+  }
+
+  .container__discounts {
+    span {
+      display: none;
+    }
+  }
+
+  .container__discounts {
+    width: 100%;
+    display: flex;
+  }
+
+  .container__discounts__elem {
+    width: 110px;
+  }
+
+  .container__discounts {
+    h3 {
+      font-size: 1em;
+    }
+  }
+
+  .container__destacados {
+    padding: 0% 2%;
+  }
+
+  .container__category_icon_element_title {
+    h3 {
+      font-family: "Monument Extended";
+      font-size: 0.8em;
+    }
+  }
+
+  .section__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 1% 0%;
+  }
+
+  .container__newsletter_img {
+    img {
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .container__newsletter_text {
+    text-align: center;
+  }
+
+  .container__newsletter {
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .form__email {
+    width: 100%;
+    text-align: left;
+  }
+
+  .form__input {
+    background-color: white;
+    font-weight: bold;
+    width: 25%;
+    color: black;
+    margin-top: 2%;
+    margin: 2% auto;
+  }
+
+  .footer__container {
+    div {
+      margin: 0 2%;
+    }
+  }
+
+  .footer__container {
+    div {
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+
+  .footer__container__about_us__element {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__container__social__logo {
+    min-width: 103px;
+  }
+
+  .footer {
+    padding-top: 10px;
+    border-top: 2px solid #4a4a4a;
+  }
+
+  /* PAGINA NEW */
+
+  .asside {
+    padding: 50px;
+  }
+
+  .gallery__container {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .gallery__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gallery__item {
+    div {
+      text-align: center;
+    }
+  }
+
+  .gallery__item__name {
+    text-align: center;
+  }
+
+  .main__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .gallery__container {
+    padding: 0px 50px;
+  }
+
+  .description__container {
+    margin: 10px 0;
+  }
+
+  .description__container {
+    h3 {
+      margin: 10px 0;
+      font-size: 1.5em;
+    }
+  }
+
+  .description__container {
+    div {
+      span {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .main_help_menu {
+    width: 90%;
+  }
+}
+
+/*fin tablet*/
+
+/*movil*/
+
+@media (max-width: 575.98px) and (orientation: portrait) {
+  .container__figure {
+    height: 600px;
+    background-image: url(../assets/images/main-banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container__cards__element {
+    margin: 2% 0;
+  }
+
+  .container__cards__element__title {
+    font-size: 2em;
+    margin: 2% 0;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .container__cards__element__price {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .container__figure__img_banner {
+    display: none;
+  }
+
+  .container__discounts {
+    span {
+      display: none;
+    }
+  }
+
+  .container__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .container__discounts {
+    width: 100%;
+    display: flex;
+  }
+
+  .container__discounts__elem {
+    width: 110px;
+  }
+
+  .container__discounts {
+    h3 {
+      font-size: 1em;
+    }
+  }
+
+  .container__destacados {
+    padding: 0% 2%;
+  }
+
+  .container__category_icon_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 15px 0;
+  }
+
+  .container__category_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-betweean;
+  }
+
+  .container__category_icon_element_title {
+    h3 {
+      font-family: "Monument Extended";
+      font-size: 2em;
+    }
+  }
+
+  .section__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 1% 0%;
+  }
+
+  .container__newsletter_img {
+    img {
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .container__newsletter_text {
+    text-align: center;
+  }
+
+  .container__newsletter {
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .form__email {
+    width: 100%;
+    text-align: left;
+  }
+
+  .form__input {
+    background-color: white;
+    font-weight: bold;
+    width: 25%;
+    color: black;
+    margin-top: 2%;
+    margin: 2% auto;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .footer__container {
+    div {
+      margin: 0 2%;
+    }
+  }
+
+  .footer__container {
+    div {
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+
+  .footer__container__about_us__element {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__container__social__logo {
+    min-width: 103px;
+  }
+
+  .footer {
+    padding-top: 10px;
+    border-top: 2px solid #4a4a4a;
+  }
+
+  /* PAGINA NEW */
+
+  .asside {
+    padding: 50px;
+  }
+
+  .gallery__container {
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .main__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .gallery__container {
+    padding: 0px 50px;
+  }
+
+  .description__container {
+    margin: 10px 0;
+  }
+
+  .description__container {
+    h3 {
+      margin: 10px 0;
+      font-size: 1.5em;
+    }
+  }
+
+  .description__container {
+    div {
+      span {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .main_help_menu {
+    width: 90%;
+  }
+
+  .container__form__element {
+    width: 80%;
+  }
+}

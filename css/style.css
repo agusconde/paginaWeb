@@ -9,67 +9,7 @@
   font-family: "Monument Extended";
   src: url(../assets/fonts/MonumentExtended-Regular.otf);
 }
-
 /* -------------------------- CLASES REUTILIZABLES (INICIO) -------------------------- */
-
-/* --------- Header - antiguo - --------- */
-
-/* .header--sticky {
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  background-color: white;
-}
-.header__brand_logo {
-  height: 75px;
-}
-
-.header__log {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__log_log_in {
-  padding: 1% 1% 0 0;
-}
-
-.header__log_log_in a {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-
-.header__nav {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(23, 23, 23);
-}
-
-.header__nav ul {
-  display: flex;
-  justify-content: space-around;
-  padding: 0.75% 0%;
-  width: 35%;
-}
-.header__nav ul li {
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.header__nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.8em;
-  font-weight: bold;
-}
-
-.header__nav ul li a:hover {
-  border-bottom: 2px solid white;
-} */
-
-/* --------- Footer --------- */
-
 .footer--margin {
   margin: 2% 2%;
 }
@@ -77,6 +17,7 @@
 .footer__social_logo {
   height: 30px;
 }
+
 .footer__container {
   display: flex;
   justify-content: space-around;
@@ -106,7 +47,6 @@
 }
 
 /* ----- */
-
 .center_text {
   text-align: center;
 }
@@ -120,20 +60,17 @@
 }
 
 /* -------------------------- CLASES REUTILIZABLES (FIN) -------------------------- */
-
 /* -------------------------- INDEX STYLE (INICIO) -------------------------- */
-
 /* --------- Banner principal --------- */
-
 .container__figure {
   background-color: rgb(23, 23, 23);
 }
+
 .container__figure__img_banner {
   width: 100%;
 }
 
 /* --------- Seccion DESCUENTOS --------- */
-
 .container__discounts {
   width: 80%;
   display: flex;
@@ -152,18 +89,19 @@
   margin-left: 2%;
   margin-right: 2%;
 }
+
 .container__discounts__elem div {
   display: flex;
   justify-content: center;
 }
 
 /* --------- Seccion DESTACADOS --------- */
-
 .container__cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+
 .container__cards--wrap {
   display: flex;
   justify-content: space-between;
@@ -176,6 +114,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .container__cards__element img {
   margin: 0 auto;
 }
@@ -241,7 +180,7 @@
   font-family: "Monument Extended";
 }
 
-h2[class="alternative_title"] {
+h2[class=alternative_title] {
   font-size: 2em;
   margin-top: 2%;
 }
@@ -257,16 +196,17 @@ h2[class="alternative_title"] {
 }
 
 /* --------- Seccion CATEGORIAS --------- */
-
 .container__category {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 0 1%;
 }
+
 .container__category h3 {
   text-align: center;
 }
+
 .container__category_icon {
   display: flex;
   justify-content: space-betweean;
@@ -302,12 +242,10 @@ h2[class="alternative_title"] {
 
 .container__category_icon_element_background img {
   width: 80%;
-
   filter: brightness(85%);
 }
 
 /* --------- Seccion NEWSLETTER --------- */
-
 .container--margin {
   margin: 5% 0%;
 }
@@ -336,6 +274,7 @@ h2[class="alternative_title"] {
 .container__newsletter span {
   font-size: 1em;
 }
+
 .container__newsletter_img {
   margin: 5% 0%;
 }
@@ -358,7 +297,6 @@ h2[class="alternative_title"] {
 }
 
 /* -------------------------- INDEX STYLE (FIN) -------------------------- */
-
 li {
   list-style: none;
 }
@@ -374,7 +312,6 @@ textarea {
 }
 
 /* -------------------------- NEW STYLE (INICIO) -------------------------- */
-
 .main__container {
   display: flex;
   justify-content: space-between;
@@ -388,6 +325,7 @@ textarea {
   gap: 25px;
   width: 100%;
 }
+
 .gallery__item {
   display: flex;
   flex-direction: column;
@@ -409,6 +347,7 @@ textarea {
 .gallery__item__name {
   text-align: center;
 }
+
 .item__img {
   width: 100%;
 }
@@ -440,24 +379,22 @@ textarea {
   font-size: 1em;
 }
 
-.form__checkbox{
+.form__checkbox {
   margin-left: 10px;
 }
 
-.gallery__item__price{
-    font-size: 1.5em;
-    font-weight: bold;
+.gallery__item__price {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 /* -------------------------- ACCESORIES STYLE (FIN) -------------------------- */
-
 /* -------------------------- HELP STYLE (INICIO) -------------------------- */
-
 .main_help_menu {
   width: 70%;
   display: flex;
   flex-direction: column;
-  box-shadow: 15px 18px 9px 0px rgba(201, 199, 201, 1);
+  box-shadow: 15px 18px 9px 0px rgb(201, 199, 201);
   border-radius: 11px 11px 11px 11px;
   border: 5px solid #4a4a4a;
   padding: 1% 2%;
@@ -480,7 +417,6 @@ textarea {
 }
 
 /* -------------------------- HELP STYLE (FIN) -------------------------- */
-
 /* -------------------------- STORE STYLE (INICIO) -------------------------- */
 .container__store {
   display: flex;
@@ -493,7 +429,6 @@ textarea {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* background-color: #171717; */
   margin: 2%;
   border: 10px solid #171717;
   border-radius: 22px 22px 22px 22px;
@@ -546,52 +481,40 @@ textarea {
 }
 
 /* -------------------------- STORE FIN (INICIO) -------------------------- */
-
 /* Media queries */
-
 /*Tablet*/
-/*Portrait*/
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation: portrait) {
   .container__discounts {
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
-
-.container__discounts{
-  height: 50px;
-}
-  
+  .container__discounts {
+    height: 50px;
+  }
   .container__discounts h3 {
     font-size: 1em;
   }
-
   .container__discounts span {
     display: none;
   }
-
-    .container__discounts {
+  .container__discounts {
     width: 100%;
     display: flex;
   }
-
   .container__discounts__elem {
     width: 110px;
   }
-
   .container__discounts h3 {
     font-size: 1em;
   }
-
   .container__destacados {
     padding: 0% 2%;
   }
-
   .container__category_icon_element_title h3 {
     font-family: "Monument Extended";
     font-size: 0.8em;
   }
-
   .section__container {
     display: flex;
     justify-content: center;
@@ -599,26 +522,21 @@ textarea {
     width: 80%;
     margin: 1% 0%;
   }
-
   .container__newsletter_img img {
     height: 100%;
     margin: 0 auto;
   }
-
   .container__newsletter_text {
     text-align: center;
   }
-
   .container__newsletter form {
     display: flex;
     flex-direction: column;
   }
-
   .form__email {
     width: 100%;
     text-align: left;
   }
-
   .form__input {
     background-color: white;
     font-weight: bold;
@@ -627,31 +545,24 @@ textarea {
     margin-top: 2%;
     margin: 2% auto;
   }
-
   .footer__container div {
     margin: 0 2%;
   }
-
   .footer__container div h4 {
     text-align: center;
   }
-
   .footer__container__about_us__element {
     display: flex;
     justify-content: center;
   }
-
   .footer__container__social__logo {
     min-width: 103px;
   }
-
   .footer {
     padding-top: 10px;
     border-top: 2px solid #4a4a4a;
   }
-
   /* PAGINA NEW */
-
   .asside {
     padding: 50px;
   }
@@ -663,61 +574,42 @@ textarea {
     gap: 25px;
     width: 100%;
   }
-
   .gallery__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
   .gallery__item div {
     text-align: center;
   }
-
   .gallery__item__name {
     text-align: center;
   }
-
   .main__container {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
-
   .gallery__container {
     padding: 0px 50px;
   }
-
   .description__container {
     margin: 10px 0;
   }
-
   .description__container h3 {
     margin: 10px 0;
     font-size: 1.5em;
   }
-
   .description__container div span {
     font-size: 1.5em;
   }
-
   .main_help_menu {
-  width: 90%;
+    width: 90%;
+  }
 }
-  /*   body {
-    background-color: red;
-  } */
-}
-
 /*fin tablet*/
-
 /*movil*/
-
 @media (max-width: 575.98px) and (orientation: portrait) {
-  /*   body {
-    background: green;
-  } */
-
   .container__figure {
     height: 600px;
     background-image: url(../assets/images/main-banner.jpg);
@@ -725,18 +617,15 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .container__cards__element {
     margin: 2% 0;
   }
-
   .container__cards__element__title {
     font-size: 2em;
     margin: 2% 0;
     font-weight: 400;
     text-align: center;
   }
-
   .container__cards__element__price {
     width: 100%;
     text-align: center;
@@ -744,57 +633,46 @@ textarea {
     font-size: 1.5em;
     font-weight: bold;
   }
-
   .container__figure__img_banner {
     display: none;
   }
-
   .container__discounts span {
     display: none;
   }
-
   .container__cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: nowrap;
   }
-
   .container__discounts {
     width: 100%;
     display: flex;
   }
-
   .container__discounts__elem {
     width: 110px;
   }
-
   .container__discounts h3 {
     font-size: 1em;
   }
-
   .container__destacados {
     padding: 0% 2%;
   }
-
   .container__category_icon_container {
     display: flex;
     justify-content: center;
     position: relative;
     margin: 15px 0;
   }
-
   .container__category_icon {
     display: flex;
     flex-direction: column;
     justify-content: space-betweean;
   }
-
   .container__category_icon_element_title h3 {
     font-family: "Monument Extended";
     font-size: 2em;
   }
-
   .section__container {
     display: flex;
     justify-content: center;
@@ -802,26 +680,21 @@ textarea {
     width: 80%;
     margin: 1% 0%;
   }
-
   .container__newsletter_img img {
     height: 100%;
     margin: 0 auto;
   }
-
   .container__newsletter_text {
     text-align: center;
   }
-
   .container__newsletter form {
     display: flex;
     flex-direction: column;
   }
-
   .form__email {
     width: 100%;
     text-align: left;
   }
-
   .form__input {
     background-color: white;
     font-weight: bold;
@@ -830,7 +703,6 @@ textarea {
     margin-top: 2%;
     margin: 2% auto;
   }
-
   .footer__container {
     display: flex;
     flex-direction: column;
@@ -839,31 +711,24 @@ textarea {
   .footer__container div {
     margin: 0 2%;
   }
-
   .footer__container div h4 {
     text-align: center;
   }
-
   .footer__container__about_us__element {
     display: flex;
     justify-content: center;
   }
-
   .footer__container__social__logo {
     min-width: 103px;
   }
-
   .footer {
     padding-top: 10px;
     border-top: 2px solid #4a4a4a;
   }
-
   /* PAGINA NEW */
-
   .asside {
     padding: 50px;
   }
-
   .gallery__container {
     padding: 35px;
     display: grid;
@@ -872,7 +737,6 @@ textarea {
     gap: 25px;
     width: 100%;
   }
-
   .main__container {
     display: flex;
     justify-content: space-between;
@@ -881,28 +745,22 @@ textarea {
   .gallery__container {
     padding: 0px 50px;
   }
-
   .description__container {
     margin: 10px 0;
   }
-
   .description__container h3 {
     margin: 10px 0;
     font-size: 1.5em;
   }
-
   .description__container div span {
     font-size: 1.5em;
   }
-
-.main_help_menu {
-  width: 90%;
+  .main_help_menu {
+    width: 90%;
+  }
+  .container__form__element {
+    width: 80%;
+  }
 }
 
-.container__form__element {
-  width: 80%;
-}
-
-
-
-}
+/*# sourceMappingURL=style.css.map */
