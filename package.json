@@ -1,0 +1,23 @@
+{
+  "name": "paginaweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agusconde/paginaWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agusconde/paginaWeb/issues"
+  },
+  "homepage": "https://github.com/agusconde/paginaWeb#readme",
+  "devDependencies": {
+    "sass": "^1.54.0"
+  }
+}
